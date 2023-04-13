@@ -1,0 +1,50 @@
+###
+GET http://localhost:3500/api/status
+
+###
+GET http://localhost:3500/api/users
+
+
+###
+GET http://localhost:3500/api/pins
+
+###
+POST http://localhost:3500/api/pins
+Content-Type: application/json
+
+{
+  "username": "john",
+  "title": "Suleymaniye Mosque",
+  "desc": "It was amazing place",
+  "rating": 5,
+  "latitude": 123123,
+  "longtitude":123234
+}
+
+###
+POST http://localhost:3500/api/register
+Content-Type: application/json
+
+{
+  "username": "john",
+  "email": "john@example.com",
+  "password": "123123"
+}
+
+
+###
+POST http://localhost:3500/api/login
+Content-Type: application/json
+
+{
+  "username": "john",
+  "password": "123123"
+}
+###
+POST http://localhost:3500/api/login
+Content-Type: application/json
+
+{
+  "email":"john@example.com",
+  "password": "123123"
+}
